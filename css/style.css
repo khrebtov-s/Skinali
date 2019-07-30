@@ -83,6 +83,7 @@ img {
 }
 
 .button {
+  text-decoration: none;
   background-color: #507fe1;
   padding: 25px 45px;
   text-transform: uppercase;
@@ -494,6 +495,21 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog__link-more {
+  display: inline-block;
+}
+
+.catalog__description {
+  display: block;
+  font-size: 16px;
+  margin-top: 24px;
 }
 
 .catalog-card {
