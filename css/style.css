@@ -356,12 +356,20 @@ img {
 }
 
 .offer-block {
-  background: #fff url("../img/offer/offer-bg.jpg") no-repeat center right;
-  background-size: contain;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 80px;
-  margin-top: -150px;
+  margin-top: -170px;
+}
+
+.offer-block_calc-bg {
+  background: #fff url("../img/offer/offer-bg-calc.jpg") no-repeat center right;
+  background-size: contain;
+}
+
+.offer-block_price-bg {
+  background: #fff url("../img/offer/offer-bg-price.jpg") no-repeat center right;
+  background-size: contain;
 }
 
 .offer__title {
@@ -377,6 +385,7 @@ img {
   font-size: 21px;
   font-weight: 300;
   margin-bottom: 40px;
+  max-width: 800px;
 }
 
 .form__row {
@@ -392,6 +401,10 @@ img {
 
 .form__row:last-child {
   margin-bottom: none;
+}
+
+.form__policy {
+  margin-left: 30px;
 }
 
 .form__label {
@@ -416,9 +429,20 @@ img {
   width: 100%;
 }
 
+.bg-secondary {
+  background-color: #fff;
+}
+
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .offer-block {
+    background: none;
+    background-color: #fff;
   }
 }
 
@@ -447,6 +471,10 @@ img {
   }
   .offer .form__input {
     margin-bottom: 20px;
+  }
+  .offer .form__policy {
+    margin-left: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -800,5 +828,59 @@ img {
   .step {
     width: 100%;
   }
+}
+
+.reviews {
+  background-color: #f1f1f1;
+}
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-slider__item {
+  text-align: center;
+}
+
+.reviews-slider__name {
+  font-size: 14px;
+}
+
+.reviews-slider__text {
+  font-size: 15px;
+  position: relative;
+  font-style: italic;
+  background-color: #fff;
+  max-width: 370px;
+  min-height: 144px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
+
+.reviews-slider__text:after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 10px;
+  border: 20px solid transparent;
+  border-top: 20px solid #fff;
+}
+
+.reviews-slider__image {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #507fe1;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
 }
 /*# sourceMappingURL=style.css.map */
