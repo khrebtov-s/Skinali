@@ -905,4 +905,42 @@ img {
 .production-block__image {
   margin: 20px 0;
 }
+
+.contacts {
+  background-color: #f1f1f1;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts-block__item {
+  text-align: center;
+}
+
+.contacts-block__image {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.contacts-block__text {
+  font-size: 16px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
